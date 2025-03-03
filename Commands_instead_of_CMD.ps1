@@ -28,9 +28,6 @@ Restart-NetAdapter -Name "Ethernet 2"
 Get-DnsClientCache
 Clear-DnsClientCache
  
-# nslookup
-Resolve-DnsName google.ch | select *
- 
 # net use
 New-SmbMapping -LocalPath 'x:' -RemotePath '\\kr10-kl1\Kurs'
 
